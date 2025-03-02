@@ -1,0 +1,146 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #5bb1fc, #185392)
+}
+.box{
+    width: 550px;
+    height: 400px;
+    background-color: rgb(83, 81, 81);
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-shadow{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+#cardNumber{
+    display: flex;
+    height:25px; 
+    width: 390px;
+    font-size: 20px;
+    padding:5px;
+    border:2px solid black;
+    border-radius: 10px;
+    outline:none;
+    transition: border-color 0.1s ease, box-shadow 0.1s ease;
+}
+
+#cardNumber:hover{
+    border-color: #007BFF;
+    box-shadow: 0 0 5px #007BFF;
+}
+
+#cardNumber:focus{
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.card-number-body{
+    margin-bottom: 20px;
+}
+
+.card-ed-cvc{
+    margin-top: 20px;
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-expiration-date{
+    display: flex;  
+    align-items: center;
+    gap:10px; 
+}
+
+.form-select{
+    display: flex;
+    height:35px; 
+    width:75px;
+    font-size: 12px;
+    padding:5px;
+    border:2px solid black;
+    border-radius: 10px;
+    outline:none;
+    transition: border-color 0.1s ease, box-shadow 0.1s ease;
+}
+
+.form-select:hover{
+    border-color: #007BFF;
+    box-shadow: 0 0 5px #007BFF;
+}
+
+.form-select:focus{
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#cvc{
+    display: flex;
+    height:20px; 
+    width:75px;
+    font-size: 20px;
+    padding:5px;
+    border:2px solid black;
+    border-radius: 10px;
+    outline:none;
+    transition: border-color 0.1s ease, box-shadow 0.1s ease;
+}
+
+#cvc:hover{
+    border-color: #007BFF;
+    box-shadow: 0 0 5px #007BFF;
+}
+
+#cvc:focus{
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.CVC{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+}
+
+#submitbutton{
+    display: flex;
+    height:60px;
+    width:400px;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 50px;
+
+    border:2px solid black;
+    border-radius: 15px;
+    background-color: #eb903b;
+    transition: border-color 0.1s ease, box-shadow 0.1s ease;
+}
+
+#submitbutton:hover{
+    border-color: #007BFF;
+    box-shadow: 0 0 5px #007BFF;
+}
+
+#submitbutton:focus{
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
