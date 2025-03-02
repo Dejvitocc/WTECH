@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="platobna_brana.css">
+</head>
+<body>
+    <div class = "box">
+            <div class="card-shadow" style="width: 400px; height: 200px;">
+
+                <div class="card-number-body">
+                    <form>
+                        <label style = "color: azure;">Enter card number:</label>
+                        <input type="text" id="cardNumber" placeholder="**** **** **** ****" maxlength="19" inputmode="numeric">
+                    </form>
+                </div>
+
+                <div class="card-ed-cvc">
+                    <form>
+                        <label style="color:azure">Expiration Date:</label>
+                        <div class="card-expiration-date">
+                            <select id="expMonth" class="form-select" required>
+                                <option value="" disabled selected>MM</option>
+                            </select>
+
+                            <span style="color:azure">/</span>
+                    
+                            <select id="expYear" class="form-select" required>
+                                <option value="" disabled selected>YY</option>
+                            </select>
+                        </div>
+
+                    </form>
+
+                    <form>
+                        <div class="CVC">
+                            <label style="color:azure; font-size: 19px">CVC:</label>
+                            <input type="text" id="cvc" placeholder="***" maxlength="3" inputmode="numeric">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="submit">
+                    <button type="submit" id="submitbutton">Zaplatiť</button>
+                </div>
+
+            </div>
+
+        
+            <script src="platobna_brana.js"></script>
+        </div>
+</body>
+</html>
