@@ -1,3 +1,3 @@
 # WTECH
-skuska skuska
+skuska skuska (**skuska**)
 z forku
