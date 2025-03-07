@@ -15,6 +15,31 @@
     border-top: 2px solid #000; 
 }
 
+.filter-button {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 8px 16px; /* Zmenšenie paddingu na tlačidle */
+    border: 2px solid black;
+    color: black;
+}
+
+.order-by-button {
+    background-color: #292929;
+    color: #f8f9fa;
+    border-radius: 20px;
+    padding: 8px 16px; /* Zmenšenie paddingu na tlačidle */
+    border: 2px solid black;
+}
+.order-by-button:hover{
+    background-color: rgba(255, 255, 255, 0.78);
+    color: black;
+}
+
+.filter-button:hover {
+    background-color: rgba(255, 255, 255, 0.78);
+}
+
+
 .no-bullets{
     list-style-type: none; 
     padding-left: 0;
@@ -24,6 +49,19 @@
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev{
     display: flex;
+}
+
+.category-item {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    border-right: 2px solid black;
+    padding-right: 10px;
+
+}
+.category-item:last-child {
+    border-right: none;
 }
 
 @media(min-width:768px){

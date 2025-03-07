@@ -49,6 +49,120 @@
     </ol>
   </nav>
 
+  <div class="container mt-5">
+    <div class="row text-center">
+      <button class="col-2 category-item">Kategória</button>
+      <button class="col-2 category-item">Kategória</button>
+      <button class="col-2 category-item">Kategória</button>
+      <button class="col-2 category-item">Kategória</button>
+      <button class="col-2 category-item">Kategória</button>
+      <button class="col-2 category-item">Kategória</button>
+    </div>
+  </div>
+
+
+
+  <div class="custom-border mt-3"></div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <!-- Veľkosť Filter -->
+      <div class="col">
+        <div class="dropdown">
+          <button class="filter-button dropdown-toggle" type="button" id="sizeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Veľkosť
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="sizeDropdown">
+            <li><a class="dropdown-item" href="#">S</a></li>
+            <li><a class="dropdown-item" href="#">M</a></li>
+            <li><a class="dropdown-item" href="#">L</a></li>
+            <li><a class="dropdown-item" href="#">XL</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Farba Filter -->
+      <div class="col">
+        <div class="dropdown">
+          <button class="filter-button dropdown-toggle" type="button" id="colorDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Farba
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="colorDropdown">
+            <li><a class="dropdown-item" href="#">Červená</a></li>
+            <li><a class="dropdown-item" href="#">Modrá</a></li>
+            <li><a class="dropdown-item" href="#">Zelená</a></li>
+            <li><a class="dropdown-item" href="#">Čierna</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Cena Filter -->
+      <div class="col">
+        <div class="dropdown">
+          <button class="filter-button dropdown-toggle" type="button" id="priceDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Cena
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="priceDropdown">
+            <li><a class="dropdown-item" href="#">0€ - 20€</a></li>
+            <li><a class="dropdown-item" href="#">20€ - 50€</a></li>
+            <li><a class="dropdown-item" href="#">50€ - 100€</a></li>
+            <li><a class="dropdown-item" href="#">100€+</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Značka Filter -->
+      <div class="col">
+        <div class="dropdown">
+          <button class="filter-button dropdown-toggle" type="button" id="brandDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Značka
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="brandDropdown">
+            <li><a class="dropdown-item" href="#">Nike</a></li>
+            <li><a class="dropdown-item" href="#">Adidas</a></li>
+            <li><a class="dropdown-item" href="#">Puma</a></li>
+            <li><a class="dropdown-item" href="#">Reebok</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Materiál Filter -->
+      <div class="col">
+        <div class="dropdown">
+          <button class="filter-button dropdown-toggle" type="button" id="materialDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Materiál
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="materialDropdown">
+            <li><a class="dropdown-item" href="#">Bavlna</a></li>
+            <li><a class="dropdown-item" href="#">Polyester</a></li>
+            <li><a class="dropdown-item" href="#">Nylon</a></li>
+            <li><a class="dropdown-item" href="#">Látka</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+
+      <!-- Zoradenie -->
+      <div class="col">
+        <div class="dropdown">
+          <button class="order-by-button dropdown-toggle" type="button" id="orderBy" data-bs-toggle="dropdown" aria-expanded="false">
+            Zoradiť podľa
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="orderBY">
+            <li><a class="dropdown-item" href="#">Najnovšie</a></li>
+            <li><a class="dropdown-item" href="#">Najobľúbenejšie</a></li>
+            <li><a class="dropdown-item" href="#">Najnižšia cena</a></li>
+            <li><a class="dropdown-item" href="#">Najvyššia cena</a></li>
+          </ul>
+        </div>
+      </div>    </div>
+  </div>
+
+
 
 
   <div class="container d-flex mt-5 custom-border">
@@ -113,7 +227,6 @@
     return params.get('kategoria');
   }
 
-  // Nastavenie názvu aktuálnej kategórie v breadcrumbe
   document.addEventListener("DOMContentLoaded", function () {
     const category = getCategoryFromURL();
     const categoryMap = {
@@ -135,6 +248,8 @@
     window.location.href = `vyber_produktov.html?kategoria=${category}`;
   }
 </script>
+
+
 
 </body>
 </html>
