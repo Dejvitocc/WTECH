@@ -13,14 +13,14 @@
 
                 <div class="card-number-body">
                     <form>
-                        <label style = "color: azure;">Enter card number:</label>
+                        <label for="cardNumber" style = "color: azure;">Enter card number:</label>
                         <input type="text" id="cardNumber" placeholder="**** **** **** ****" maxlength="19" inputmode="numeric">
                     </form>
                 </div>
 
                 <div class="card-ed-cvc">
                     <form>
-                        <label style="color:azure">Expiration Date:</label>
+                        <label for="expMonth" style="color:azure">Expiration Date:</label>
                         <div class="card-expiration-date">
                             <select id="expMonth" class="form-select" required>
                                 <option value="" disabled selected>MM</option>
@@ -37,7 +37,7 @@
 
                     <form>
                         <div class="CVC">
-                            <label style="color:azure; font-size: 19px">CVC:</label>
+                            <label for="cvc" style="color:azure; font-size: 19px">CVC:</label>
                             <input type="text" id="cvc" placeholder="***" maxlength="3" inputmode="numeric">
                         </div>
                     </form>
