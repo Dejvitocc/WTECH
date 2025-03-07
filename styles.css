@@ -69,3 +69,25 @@
     height: 40px;      
     padding: 0;    
 }
+
+.border-itemy-kosik{
+    border-bottom: 2px solid black;
+}
+
+.border-nadpisu{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.custom-spacing{
+    margin-right: 60px;
+    margin-left: 50px;
+}
+
+.card-spacing{
+    margin-left: 50px;
+}
+
+.payment-bg{
+    background-color: darkgray;
+}
