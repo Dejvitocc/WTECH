@@ -11,6 +11,65 @@
     background-color: beige;
 }
 
+.product-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.product-description {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+#quantity {
+    width: 80px;
+}
+
+.color-selection {
+    display: flex;
+    gap: 10px; /* Medzera medzi guľôčkami */
+}
+
+/* Guľôčky, ktoré reprezentujú farby */
+.color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Zaoblenie na kruh */
+    display: inline-block;
+    cursor: pointer; /* Umožní kliknutie na guľôčku */
+    border: 2px solid #ccc; /* Okraje okolo guľôčky */
+    transition: border-color 0.3s ease; /* Plynulý prechod pri zmene okraja */
+}
+
+.color-circle:hover {
+    border-color: #000; /* Zmena okraja pri prechode myšou */
+}
+
+.size-option {
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.size-option:hover {
+    background-color: #ddd;
+    border-color: #000;
+}
+
 .custom-border {
     border-top: 2px solid #000; 
 }
