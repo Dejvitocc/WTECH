@@ -188,3 +188,9 @@
 .payment-bg{
     background-color: darkgray;
 }
+
+.box{
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #000;
+}
