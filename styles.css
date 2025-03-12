@@ -194,3 +194,7 @@
     padding: 10px;
     border: 2px solid #000;
 }
+
+.small-font {
+    font-size: 18px;
+}
