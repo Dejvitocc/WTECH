@@ -32,12 +32,12 @@
                     
                 </div>
                 <div class="col-12 col-md-4">
-                    <button class="btn v_btn btn-dark btn-lg w-100" onclick="changeContent('orders')">
+                    <button class="btn v_btn btn-dark btn-lg w-100" onclick="openCategory('orders')" >
                         Správa objednávok
                     </button>
                 </div>
                 <div class="col-12 col-md-4">
-                    <button class="btn v_btn btn-dark btn-lg w-100" onclick="changeContent('orders')">
+                    <button class="btn v_btn btn-dark btn-lg w-100" onclick="openCategory('customers')" >
                         Správa zákazníkov
                     </button>
                 </div>
@@ -66,7 +66,7 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link   w-100" onclick="">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link   w-100" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
 
@@ -82,7 +82,7 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link   w-100" onclick="">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link   w-100" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
 
@@ -98,7 +98,7 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link   w-100" onclick="">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link   w-100" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
 
@@ -114,7 +114,7 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link   w-100" onclick="">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link   w-100" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
 
@@ -130,7 +130,7 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link   w-100" onclick="">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link   w-100" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
 
@@ -146,7 +146,7 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link   w-100" onclick="">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link   w-100" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
 
@@ -162,7 +162,7 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link   w-100" onclick="">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link   w-100" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
             
@@ -182,7 +182,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-       
+       function changeContent(page) {
+            if (page === 'change_order') {
+                window.location.href = 'uprava_objednavky_A.html';
+            }
+        }
     </script>
     
 </body>
