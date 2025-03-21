@@ -1,4 +1,4 @@
-body {
+body.with-background {
     background-image: url('obrazky/trava.jpg'); 
     background-size: cover; 
     background-position: center; 
@@ -133,33 +133,84 @@ body {
     border-right: none;
 }
 
-@media(min-width:768px){
+/* Extra malé obrazovky (<576px): 1 item */
+@media (max-width: 575.98px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
     .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next{
+    .carousel-inner .carousel-item-next {
+        transform: translateX(100%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-100%);
+    }
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start {
+        transform: translateX(0);
+    }
+}
+
+/* Malé obrazovky (576px - 767px): 2 itemy */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .carousel-inner .carousel-item > div {
+        flex: 0 0 50%; /* 2 itemy vedľa seba  */
+    }
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(50%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-50%);
+    }
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start {
+        transform: translateX(0);
+    }
+}
+
+/* Stredné obrazovky (768px - 991px): 3 itemy */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .carousel-inner .carousel-item > div {
+        flex: 0 0 33.33%; /* 3 itemy vedľa seba  */
+    }
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33.33%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.33%);
+    }
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start {
+        transform: translateX(0);
+    }
+}
+
+/* Veľké obrazovky (≥992px): 4 itemy */
+@media (min-width: 992px) {
+    .carousel-inner .carousel-item > div {
+        flex: 0 0 25%; /* 4 itemy vedľa seba */
+    }
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
         transform: translateX(25%);
     }
     .carousel-inner .carousel-item-start.active,
-    .carousel-inner .carousel-item-prev{
+    .carousel-inner .carousel-item-prev {
         transform: translateX(-25%);
     }
-
     .carousel-inner .carousel-item-end,
-    .carousel-inner .carousel-item-start{
+    .carousel-inner .carousel-item-start {
         transform: translateX(0);
     }
-
 }
-
-@media(max-width:767px){
-    .carousel-inner .carousel-item > div{
-        display: none;
-    }
-
-    .carousel-inner .carousel-item > div:first-child{
-        display: block;
-    }
-}
-
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -207,7 +258,8 @@ body {
 }
 
 .payment-bg{
-    background-color: darkgray;
+    background-color: rgb(240, 248, 255); 
+    border: 3px solid black;
 }
 
 .box{
