@@ -20,7 +20,9 @@
                 <div class="col-lg-8 col-md-8 d-flex justify-content-center">
                 </div>
                 <div class="col-lg-2 col-md-2 d-flex justify-content-center">
-                    <button type="button" class="btn btn-light" onclick="window.location.href = 'index.html'">Odhlásiť</button>
+                    <a href="index.html">
+                        <button type="button" class="btn btn-light">Odhlásiť</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -29,16 +31,18 @@
         <div class="container mt-3 custom-border">
             <div class="row mt-3 justify-content-center w-100">
                 <div class="col-12 col-md-4 mt-1">
-                    <button class="btn v_btn btn-dark btn-lg  w-100 small-font" onclick="window.location.href = 'sprava_produktov_A.html'">Správa produktov</button>
-                    
+                    <a href="sprava_produktov_A.html">
+                        <button class="btn v_btn btn-outline-dark btn-lg  w-100 small-font">Správa produktov</button>
+                    </a>
+
                 </div>
                 <div class="col-12 col-md-4 mt-1">
-                    <button class="btn v_btn btn-dark btn-lg w-100 small-font" onclick="openMode('orders')" >
+                    <button class="btn v_btn btn-outline-dark btn-lg w-100 small-font" onclick="openMode('orders')" >
                         Správa objednávok
                     </button>
                 </div>
                 <div class="col-12 col-md-4 mt-1">
-                    <button class="btn v_btn btn-dark btn-lg w-100 small-font" onclick="openMode('customers')" >
+                    <button class="btn v_btn btn-outline-dark btn-lg w-100 small-font" onclick="openMode('customers')" >
                         Správa zákazníkov
                     </button>
                 </div>
@@ -67,14 +71,14 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link   w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link  custom-link w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
 
             <div class="row w-100 d-flex justify-content-center align-items-center custom-border">
 
                 <div class="col-1 d-flex justify-content-center mt-1 dynamic-icon">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003zM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461z"/>
                       </svg>
                 </div>
@@ -83,14 +87,14 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link   w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link  custom-link w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
 
             <div class="row w-100 d-flex justify-content-center align-items-center custom-border">
 
                 <div class="col-1 d-flex justify-content-center mt-1 dynamic-icon">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003zM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461z"/>
                       </svg>
                 </div>
@@ -99,14 +103,14 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link   w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link  custom-link w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
 
             <div class="row w-100 d-flex justify-content-center align-items-center custom-border">
 
                 <div class="col-1 d-flex justify-content-center mt-1 dynamic-icon ">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003zM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461z"/>
                       </svg>
                 </div>
@@ -115,14 +119,14 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link   w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link  custom-link w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
 
             <div class="row w-100 d-flex justify-content-center align-items-center custom-border">
 
                 <div class="col-1 d-flex justify-content-center mt-1 dynamic-icon">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003zM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461z"/>
                       </svg>
                 </div>
@@ -131,14 +135,14 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link   w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link  custom-link w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
 
             <div class="row w-100 d-flex justify-content-center align-items-center custom-border">
 
                 <div class="col-1 d-flex justify-content-center mt-1 dynamic-icon">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003zM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461z"/>
                       </svg>
                 </div>
@@ -147,14 +151,14 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link   w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link  custom-link w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
 
             <div class="row w-100 d-flex justify-content-center align-items-center custom-border">
 
                 <div class="col-1 d-flex justify-content-center mt-1 dynamic-icon">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003zM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461z"/>
                       </svg>
                 </div>
@@ -163,7 +167,7 @@
                     <span class="order-description">popis objednávky 1</span>
                 </div>
                 <div class="col-4 text-center">
-                    <button class="btn v_btn btn-link w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
+                    <button class="btn v_btn btn-link custom-link w-100 change" onclick="changeContent('change_order')">Upraviť-Zmazať</button>
                 </div>
             </div>
             
@@ -182,59 +186,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-       function changeContent(page) {
-            if (page === 'change_order') {
-                window.location.href = 'uprava_objednavky_A.html';
-            }
-        }
-    </script>
-    <script>
-       function openMode(mode) {
-            history.pushState(null, '', `?mode=${mode}`);
-
-            let iconElements = document.querySelectorAll('.dynamic-icon');
-            let descriptions = document.querySelectorAll('.order-description');
-            let buttons = document.querySelectorAll('.change');
-
-            iconElements.forEach(function(iconElement) {
-                if (mode === 'customers') {
-                    iconElement.innerHTML = `
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                        </svg>`;
-                } else {
-                    iconElement.innerHTML = `
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003zM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461z"/>
-                        </svg>`;
-                }
-            });
-
-            descriptions.forEach(function(description) {
-                if (mode === 'orders') {
-                    description.textContent = "Popis objednávky"; 
-                } else {
-                    description.textContent = "Popis zákazníka";  
-                }
-            });
-
-            buttons.forEach(function(button) {
-                if (mode === 'orders') {
-                    button.textContent = "Upraviť-Stornovať"; 
-                } else {
-                    button.textContent = "Zablokovať";  
-                }
-            });
-        }
-        
-
-        window.onload = function() {
-            const params = new URLSearchParams(window.location.search);
-            const mode = params.get('mode') || 'orders';
-            openMode(mode);
-        };
-        </script>
+    <script src="js/sprava_objednavok_zakaznikov_A.js" defer></script>
 </body>
 </html>

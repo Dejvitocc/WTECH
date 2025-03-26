@@ -1,24 +1,39 @@
 body.with-background {
-    background-image: url('obrazky/trava.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: repeat; 
-    height: 100%; 
-    margin: 0; 
+    background-color: #212529;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin: 0;
 }
 
-
-.custom-body-bg{
-    background-color: antiquewhite;
+.custom-body-bg {
+    background-color: #FFFFFF;
     border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.custom-bg{
-    background-color: rgb(247, 211, 168);
+.custom-link {
+    color: #1A3C5A;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.season-bg{
-    background-color: beige;
+.custom-link:hover{
+    color: #4682B4;
+}
+
+.custom-bg {
+    background-color: #F8F9FA;
+}
+
+.season-bg {
+    background-color: #1A3C5A;
+    color: #FFFFFF;
+}
+
+.payment-bg {
+    background-color: #F8F9FA;
+    border: 3px solid black;
 }
 
 .product-name {
@@ -42,22 +57,21 @@ body.with-background {
 
 .color-selection {
     display: flex;
-    gap: 10px; /* Medzera medzi guľôčkami */
+    gap: 10px;
 }
 
-/* Guľôčky, ktoré reprezentujú farby */
 .color-circle {
     width: 30px;
     height: 30px;
-    border-radius: 50%; /* Zaoblenie na kruh */
+    border-radius: 50%;
     display: inline-block;
-    cursor: pointer; /* Umožní kliknutie na guľôčku */
-    border: 2px solid #ccc; /* Okraje okolo guľôčky */
-    transition: border-color 0.3s ease; /* Plynulý prechod pri zmene okraja */
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
 }
 
 .color-circle:hover {
-    border-color: #000; /* Zmena okraja pri prechode myšou */
+    border-color: #000;
 }
 
 .size-option {
@@ -81,42 +95,44 @@ body.with-background {
 }
 
 .custom-border {
-    border-top: 2px solid #000; 
+    border-top: 2px solid #000;
 }
 
 .filter-button {
     background-color: transparent;
     border-radius: 20px;
-    padding: 8px 16px; /* Zmenšenie paddingu na tlačidle */
+    padding: 8px 16px;
     border: 2px solid black;
     color: black;
+}
+
+.filter-button:hover{
+    background-color: black;
+    color: #f8f9fa;
 }
 
 .order-by-button {
     background-color: #292929;
     color: #f8f9fa;
     border-radius: 20px;
-    padding: 8px 16px; /* Zmenšenie paddingu na tlačidle */
+    padding: 8px 16px;
     border: 2px solid black;
 }
-.order-by-button:hover{
+
+.order-by-button:hover {
     background-color: rgba(255, 255, 255, 0.78);
     color: black;
 }
 
-.filter-button:hover {
-    background-color: rgba(255, 255, 255, 0.78);
-}
-
-
-.no-bullets{
-    list-style-type: none; 
+.no-bullets {
+    list-style-type: none;
     padding-left: 0;
 }
-/* kod z tutorialu https://www.youtube.com/watch?v=3AWNCldVaH0*/
+
+/* Kod z tutorialu https://www.youtube.com/watch?v=3AWNCldVaH0 */
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev{
+.carousel-inner .carousel-item-prev {
     display: flex;
 }
 
@@ -127,8 +143,8 @@ body.with-background {
     font-size: 16px;
     border-right: 2px solid black;
     padding-right: 10px;
-
 }
+
 .category-item:last-child {
     border-right: none;
 }
@@ -214,55 +230,50 @@ body.with-background {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 20px;  
-    height: 20px; 
+    width: 20px;
+    height: 20px;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    position: absolute; 
-    top: 50%;           
-    transform: translateY(-50%); 
-    width: 40px;       
-    height: 40px;      
-    padding: 0;    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    padding: 0;
 }
 
 .carousel-inner .carousel-item img {
-    width: 100%; 
-    height: 250px; 
+    width: 100%;
+    height: 250px;
     object-fit: cover;
 }
 
 .card-img-top {
-    height: 200px; 
-    object-fit: cover; 
-  }
+    height: 200px;
+    object-fit: cover;
+}
 
-.border-itemy-kosik{
+.border-itemy-kosik {
     border-bottom: 2px solid black;
 }
 
-.border-nadpisu{
+.border-nadpisu {
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
 }
 
-.custom-spacing{
+.custom-spacing {
     margin-right: 60px;
     margin-left: 50px;
 }
 
-.card-spacing{
+.card-spacing {
     margin-left: 50px;
 }
 
-.payment-bg{
-    background-color: rgb(240, 248, 255); 
-    border: 3px solid black;
-}
-
-.box{
+.box {
     display: inline-block;
     padding: 10px;
     border: 2px solid #000;
@@ -270,4 +281,56 @@ body.with-background {
 
 .small-font {
     font-size: 18px;
+}
+
+.card-link:focus {
+    outline: none;
+}
+
+.btn-light {
+    background-color: #f8f9fa; /* Zachováme svetlé pozadie */
+    border: 2px solid #1A3C5A; /* Hrubší tmavomodrý obrys */
+    color: #1A3C5A; /* Tmavomodrý text */
+    border-radius: 15px; /* Väčšie zaoblenie pre moderný vzhľad */
+    transition: all 0.3s ease; /* Plynulý prechod pre hover a focus efekty */
+}
+
+.btn-light:hover {
+    background-color: #e9ecef; /* Jemne tmavšie pozadie pri hoveri */
+    border-color: #2A5A8A; /* Svetlejší odtieň tmavomodrej pri hoveri */
+    color: #2A5A8A;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Jemný tieň pri hoveri */
+}
+
+.btn-light:focus {
+    border-color: #FFD700; /* Zlatá farba pri focus */
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.3); /* Zlatý tieň pri focus */
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px; /* Malý odstup medzi obrázkami */
+}
+
+.delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0; /* Skrytý, kým neprejdeme kurzorom */
+    transition: opacity 0.2s ease;
+}
+
+.image-wrapper:hover .delete-icon {
+    opacity: 1; /* Zobrazí sa pri prechode kurzorom */
 }

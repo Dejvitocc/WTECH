@@ -1,3 +1,1 @@
-# WTECH
-skuska **skuska** (**skuska**)
-z forku
+This webpage serves only for study purposes.

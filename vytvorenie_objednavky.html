@@ -64,16 +64,36 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-7">
                                 <label for="address" class="form-label">Ulica a číslo domu:</label>
                                 <input type="text" id="address" name="address" class="form-control" required>
+                            </div>
+                            <div class="col-5">
+                                <label for="postal" class="form-label">PSČ:</label>
+                                <input type="text" id="postal" name="postal" class="form-control" required>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-7">
                                 <label for="city" class="form-label">Mesto:</label>
                                 <input type="text" id="city" name="city" class="form-control" required>
+                            </div>
+                            <div class="col-5">
+                                <label for="country" class="form-label">Krajina:</label>
+                                <select id="country" name="country" class="form-control" required>
+                                    <option value="" disabled selected>Vyberte krajinu</option>
+                                    <option value="SK">Slovensko</option>
+                                    <option value="CZ">Česká republika</option>
+                                    <option value="AT">Rakúsko</option>
+                                    <option value="DE">Nemecko</option>
+                                    <option value="PL">Poľsko</option>
+                                    <option value="HU">Maďarsko</option>
+                                    <option value="FR">Francúzsko</option>
+                                    <option value="IT">Taliansko</option>
+                                    <option value="ES">Španielsko</option>
+                                    <option value="GB">Veľká Británia</option>
+                                </select>
                             </div>
                         </div>
                     
@@ -117,7 +137,7 @@
                         <!--Karty-->
                         <div class="dropdown mt-3 w-100">
                             <button class="btn btn-light dropdown-toggle  w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Platobná služba
+                                Spôsob platby
                             </button>
                             <ul class="dropdown-menu w-100 text-center">
                                 <li>
@@ -149,15 +169,15 @@
                             </ul>
                         </div>
                         
-                        <div class="row mt-3 w-100">
-                            <div class="col-2">
+                        <div class="row mt-3 w-100 mt-2">
+                            <div class="col-2 me-3">
                                 <label for="kupon" class="form-label">Kupon:</label>
                             </div>
                             <div class="col-6">
                                 <input type="text" id="kupon" name="kupon" class="form-control" required>
                             </div>
-                            <div class="col-3">
-                                <div class="btn btn-primary">Použiť</div>
+                            <div class="col-3 mb-2">
+                                <div class="btn btn-success">Použiť</div>
                             </div>
                         </div>
 
@@ -223,7 +243,9 @@
 
                         <div class="row">
                             <div class="col-12 mt-5 text-center">
-                            <button class="btn btn-warning" onclick="window.location.href='platobna_brana.html'">Objednať s povinnosťou platby</button>
+                                <a href="platobna_brana.html">
+                                    <button class="btn btn-success">Objednať s povinnosťou platby</button>
+                                </a>
                             </div>
                         </div>
 
