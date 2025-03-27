@@ -1,3 +1,4 @@
+/*Tmavé pozadie za celou strankou*/
 body.with-background {
     background-color: #212529;
     background-size: cover;
@@ -5,61 +6,61 @@ body.with-background {
     height: 100%;
     margin: 0;
 }
-
+/*Farba bieleho kontajnera kde sa nachádzajú všetky elementy stránky*/
 .custom-body-bg {
     background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+/*Farba pozadia pre linky*/
 .custom-link {
     color: #1A3C5A;
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
+/*zmena farby odkazu pri hoveri*/
 .custom-link:hover{
     color: #4682B4;
 }
-
+/*pozadie za tlačidlami kategórií*/
 .custom-bg {
     background-color: #F8F9FA;
 }
-
+/*pozadie pre sezónnu ponuku*/
 .season-bg {
     background-color: #1A3C5A;
     color: #FFFFFF;
 }
-
+/*Pozadie pre platobnú bránu*/
 .payment-bg {
     background-color: #F8F9FA;
     border: 3px solid black;
 }
-
+/*Text pre názov produktu*/
 .product-name {
     font-size: 2rem;
     font-weight: bold;
 }
-
+/*Text pre cenu produktu*/
 .product-price {
     font-size: 1.5rem;
     font-weight: 600;
 }
-
+/*Text pre popis produktu*/
 .product-description {
     margin-top: 20px;
     font-size: 1rem;
 }
-
+/*Šírka pre pole množstva*/
 #quantity {
     width: 80px;
 }
-
+/*Flexbox pre kruhy farieb*/
 .color-selection {
     display: flex;
     gap: 10px;
 }
-
+/*Prvok pre výber farby s prechodom*/
 .color-circle {
     width: 30px;
     height: 30px;
@@ -69,11 +70,11 @@ body.with-background {
     border: 2px solid #ccc;
     transition: border-color 0.3s ease;
 }
-
+/*Čierny obrys kruhu pri hoveri*/
 .color-circle:hover {
     border-color: #000;
 }
-
+/* Obdĺžnik pre výber veľkosti s centrovaným textom */
 .size-option {
     width: 50px;
     height: 30px;
@@ -88,16 +89,16 @@ body.with-background {
     font-weight: bold;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
-
+/* Tmavšie pozadie a čierny obrys pri hoveri */
 .size-option:hover {
     background-color: #ddd;
     border-color: #000;
 }
-
+/* Čierny horný okraj pre oddelenie sekcií */
 .custom-border {
     border-top: 2px solid #000;
 }
-
+/* Priehľadné tlačidlo s čiernym obrysom pre filtrovanie*/
 .filter-button {
     background-color: transparent;
     border-radius: 20px;
@@ -105,12 +106,12 @@ body.with-background {
     border: 2px solid black;
     color: black;
 }
-
+/*zmena farby pri hoveri*/
 .filter-button:hover{
     background-color: black;
     color: #f8f9fa;
 }
-
+/* Tmavé tlačidlo s bielym textom pre usporiadanie produktov */
 .order-by-button {
     background-color: #292929;
     color: #f8f9fa;
@@ -118,24 +119,25 @@ body.with-background {
     padding: 8px 16px;
     border: 2px solid black;
 }
-
+/*zmena farby pri hoveri*/
 .order-by-button:hover {
     background-color: rgba(255, 255, 255, 0.78);
     color: black;
 }
-
+/* Odstraňuje odrážky zo zoznamu */
 .no-bullets {
     list-style-type: none;
     padding-left: 0;
 }
 
 /* Kod z tutorialu https://www.youtube.com/watch?v=3AWNCldVaH0 */
+/* Flexbox pre zobrazenie položiek v karuseli */
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
     display: flex;
 }
-
+/* Priehľadné tlačidlo kategórie s čiernym pravým okrajom */
 .category-item {
     background-color: transparent;
     border: none;
@@ -144,11 +146,11 @@ body.with-background {
     border-right: 2px solid black;
     padding-right: 10px;
 }
-
+/* Odstraňuje pravý okraj u poslednej kategórie */
 .category-item:last-child {
     border-right: none;
 }
-
+/* Skryje všetky položky karuselu okrem prvej na malých obrazovkách */
 /* Extra malé obrazovky (<576px): 1 item */
 @media (max-width: 575.98px) {
     .carousel-inner .carousel-item > div {
@@ -170,11 +172,11 @@ body.with-background {
         transform: translateX(0);
     }
 }
-
+/* Zobrazí 2 položky vedľa seba na malých obrazovkách */
 /* Malé obrazovky (576px - 767px): 2 itemy */
 @media (min-width: 576px) and (max-width: 767.98px) {
     .carousel-inner .carousel-item > div {
-        flex: 0 0 50%; /* 2 itemy vedľa seba  */
+        flex: 0 0 50%; 
     }
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
@@ -189,11 +191,11 @@ body.with-background {
         transform: translateX(0);
     }
 }
-
+/* Zobrazí 3 položky vedľa seba na stredných obrazovkách */
 /* Stredné obrazovky (768px - 991px): 3 itemy */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .carousel-inner .carousel-item > div {
-        flex: 0 0 33.33%; /* 3 itemy vedľa seba  */
+        flex: 0 0 33.33%; 
     }
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
@@ -208,11 +210,11 @@ body.with-background {
         transform: translateX(0);
     }
 }
-
+/* Zobrazí 4 položky vedľa seba na veľkých obrazovkách */
 /* Veľké obrazovky (≥992px): 4 itemy */
 @media (min-width: 992px) {
     .carousel-inner .carousel-item > div {
-        flex: 0 0 25%; /* 4 itemy vedľa seba */
+        flex: 0 0 25%; 
     }
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
@@ -227,13 +229,13 @@ body.with-background {
         transform: translateX(0);
     }
 }
-
+/* Definuje veľkosť ikon šípok v carousel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     width: 20px;
     height: 20px;
 }
-
+/* Centrované ovládacie prvky karuselu */
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
@@ -243,36 +245,36 @@ body.with-background {
     height: 40px;
     padding: 0;
 }
-
+/* Prispôsobuje obrázky v karuseli na fixnú výšku */
 .carousel-inner .carousel-item img {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
-
+/* Fixná výška obrázkov v kartách */
 .card-img-top {
     height: 200px;
     object-fit: cover;
 }
-
+/* Čierny spodný okraj pre položky v košíku */
 .border-itemy-kosik {
     border-bottom: 2px solid black;
 }
-
+/* Čierne okraje nad a pod nadpisom */
 .border-nadpisu {
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
 }
-
+/* Vlastné odstupy pre obsah */
 .custom-spacing {
     margin-right: 60px;
     margin-left: 50px;
 }
-
+/* Odstup vľavo pre karty */
 .card-spacing {
     margin-left: 50px;
 }
-
+/* Inline blok s čiernym obrysom */
 .box {
     display: inline-block;
     padding: 10px;
@@ -312,7 +314,7 @@ body.with-background {
     display: inline-block;
     margin-right: 10px; /* Malý odstup medzi obrázkami */
 }
-
+/* Ikona mazania v admin časti pre odstránenie obrázkov pri upravovaní/vytváraní produktu*/
 .delete-icon {
     position: absolute;
     top: 5px;

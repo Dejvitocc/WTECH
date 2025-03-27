@@ -1,16 +1,17 @@
+//Ak je parameter page rovný 'change_order', presmeruje používateľa na stránku uprava_objednavky_A.html
 function changeContent(page) {
     if (page === 'change_order') {
         window.location.href = 'uprava_objednavky_A.html';
     }
 }
-
+//Aktualizuje URL pomocou history.pushState, pridáva parameter ?mode=${mode} (napr. ?mode=customers)
 function openMode(mode) {
     history.pushState(null, '', `?mode=${mode}`);
 
     let iconElements = document.querySelectorAll('.dynamic-icon');
     let descriptions = document.querySelectorAll('.order-description');
     let buttons = document.querySelectorAll('.change');
-
+    //podľa módu sa zmenia elementy stránky ako napríklad ikony
     iconElements.forEach(function(iconElement) {
         if (mode === 'customers') {
             iconElement.innerHTML = `
@@ -25,7 +26,7 @@ function openMode(mode) {
                         </svg>`;
         }
     });
-
+    //zmení sa popis podľa módu stránky
     descriptions.forEach(function(description) {
         if (mode === 'orders') {
             description.textContent = "Popis objednávky";
@@ -33,7 +34,7 @@ function openMode(mode) {
             description.textContent = "Popis zákazníka";
         }
     });
-
+    //upraví sa popis tlačítok podľa módu
     buttons.forEach(function(button) {
         if (mode === 'orders') {
             button.textContent = "Upraviť-Stornovať";

@@ -1,8 +1,9 @@
-function getCategoryFromURL() {
+function getCategoryFromURL() { //extrahovanie kategórie z URL adresy
     const params = new URLSearchParams(window.location.search);
     return params.get('kategoria');
 }
-
+//po načítaní stránky sa získa kategória pomocou getCategoryFromURL()
+//a podľa vybranej kaegórie sa zobrazí v detaili produktu v akej kategorii sa nachádzame
 document.addEventListener("DOMContentLoaded", function () {
     const category = getCategoryFromURL();
     const categoryMap = {
@@ -16,12 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("current-category").textContent = categoryMap[category];
     }
 });
-
+//Presmerovanie používateľa na stránku výberu produktov s danou kategóriou
 function openCategory(category) {
     window.location.href = `vyber_produktov.html?kategoria=${category}`;
 }
 
-// Funkcia na zmenu hlavného obrázka
+// Funkcia na zmenu hlavného obrázka odstráni triedu active zo všetkých miniatúr 
+// a pridanie triedy active na zvolenej miniatúre
 function changeImage(imageSrc, thumbnail) {
     document.getElementById('mainImage').src = imageSrc;
     document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));

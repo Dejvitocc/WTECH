@@ -9,7 +9,7 @@
 </head>
 <body class="with-background">
     <div class="container custom-body-bg">
-        <!--Hlavné menu-->
+        <!--Hlavné menu, ktoré obsahuje logo obchodu, vyhľadávací bar, tlačítka na prihlásenie a košík-->
         <div class="container  mt-3 d-flex justify-content-center">
             <div class="row align-items-center w-100 mt-1 mb-1">
                 <div class="col-lg-2 col-md-2 d-flex justify-content-center">
@@ -94,11 +94,13 @@
                     <!--Kód prebraný z https://getbootstrap.com/docs/5.3/components/carousel/-->
                     <!--https://getbootstrap.com/docs/5.3/components/card/-->
                     <!-- https://www.youtube.com/watch?v=3AWNCldVaH0-->
+                    <!--Carousel pre produkty - každý karousel postupne zobrazuje 1,2,4 obrázky podľa veľkosti obrazovky-->
                     <div class="carousel slide" data-bs-ride="carousel" id="carouselExample">
                         <div class="carousel-inner d-flex justify-content-start">
                             <div class="carousel-item active ">
                                 <div class="col-12 col-md-3">
                                     <a href="detail_produktu.html" class="text-decoration-none card-link">
+                                        <!--Pre každý item v carousel je vytvorená karta ktorá obsahuje obrázok, názov a cenu-->
                                         <div class="card">
                                             <img src="obrazky/basketbalova_lopta.jpg" class="card-img-top img-fluid" alt="basketbalova_lopta">
                                             <div class="card-body">
@@ -213,6 +215,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!--Buttony na prepínanie produktov vv carousel-->
                         <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -227,7 +230,7 @@
             </div>
         </div>
 
-        <!--Populárne-->
+        <!--Populárne tiež použitie carousel-->
         <div class="container  custom-bg mt-5 d-flex justify-content-center">
             <div class="row w-100">
                 <div class="col-12 w-100">
@@ -374,6 +377,7 @@
             </div>
         </div>
 
+        <!--Kto sme - opis nášho internetového obchodu-->
         <div class="container  mt-5 d-flex justify-content-center">
             <div class="row w-100 text-center">
                 <div class="col-12">
@@ -407,6 +411,7 @@
             </div>
         </div>
 
+        <!--Podpora a obchodné podmienky-->
         <div class="container d-flex mt-5 custom-border">
             <div class="row w-100 text-center">
                     <div class=" col-12  col-md-3 col-sm-6 mt-2">
