@@ -5,15 +5,24 @@ document.addEventListener('DOMContentLoaded', function () {
     // Referencie na polia
     const nameInput = document.getElementById('name');
     const popisTextarea = document.getElementById('popis');
+    const vyrobcaTextarea = document.getElementById('výrobca');
+    const udajeProduktuTextarea = document.getElementById('údaje');
+    const farbaSelect = document.getElementById('color');
+    const sizeInput = document.getElementById('size');
     const cenaInput = document.getElementById('cena');
     const createButton = document.querySelector('.btn-success');
     const deleteButtonContainer = document.getElementById('delete-button-container');
 
     // Predvyplnenie polí v edit móde
     if (mode === 'edit') {
+        const farba = "red";
         createButton.textContent = 'Upraviť';
         nameInput.value = 'Príklad produktu';
         popisTextarea.value = 'Toto je príklad popisu produktu.';
+        vyrobcaTextarea.value = 'Toto je príklad informácii o výrobcovi.';
+        udajeProduktuTextarea.value = 'Toto je príklad ďalších údajov o výrobku.';
+        farbaSelect.value = farba;
+        sizeInput.value = '42';
         cenaInput.value = '99,99';
 
         const deleteButton = document.createElement('button');

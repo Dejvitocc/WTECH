@@ -35,17 +35,17 @@ function generateSubcategories(category) {
         'muzi': [
             { id: 'panske-oblecenie', name: 'Pánske oblečenie' },
             { id: 'panska-obuv', name: 'Pánska obuv' },
-            { id: 'panske-vybavenie-doplnky', name: 'Pánske vybavenie a doplnky' }
+            { id: 'panske-vybavenie-doplnky', name: 'Pánske vybavenie' }
         ],
         'zeny': [
             { id: 'damske-oblecenie', name: 'Dámske oblečenie' },
             { id: 'damska-obuv', name: 'Dámska obuv' },
-            { id: 'damske-vybavenie-doplnky', name: 'Dámske vybavenie a doplnky' }
+            { id: 'damske-vybavenie-doplnky', name: 'Dámske vybavenie' }
         ],
         'deti': [
             { id: 'detske-oblecenie', name: 'Detské oblečenie' },
             { id: 'detska-obuv', name: 'Detská obuv' },
-            { id: 'detske-vybavenie-doplnky', name: 'Detské vybavenie a doplnky' }
+            { id: 'detske-vybavenie-doplnky', name: 'Detské vybavenie' }
         ],
         'sporty': [
             { id: 'futbal', name: 'Futbal' },
@@ -87,13 +87,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const subcategoryMap = {
         "panske-oblecenie": "Pánske oblečenie",
         "panska-obuv": "Pánska obuv",
-        "panske-vybavenie-doplnky": "Pánske vybavenie a doplnky",
+        "panske-vybavenie-doplnky": "Pánske vybavenie",
         "damske-oblecenie": "Dámske oblečenie",
         "damska-obuv": "Dámska obuv",
-        "damske-vybavenie-doplnky": "Dámske vybavenie a doplnky",
+        "damske-vybavenie-doplnky": "Dámske vybavenie",
         "detske-oblecenie": "Detské oblečenie",
         "detska-obuv": "Detská obuv",
-        "detske-vybavenie-doplnky": "Detské vybavenie a doplnky",
+        "detske-vybavenie-doplnky": "Detské vybavenie",
         "futbal": "Futbal",
         "basketbal": "Basketbal",
         "beh": "Beh",
