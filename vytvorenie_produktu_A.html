@@ -10,7 +10,7 @@
 <body>
     <!--"Hlavička" stránky iba s logom-->
     <div class="container custom-body-bg">
-        <div class="container  mt-3 d-flex justify-content-center">
+        <header class="container  mt-3 d-flex justify-content-center">
             <div class="row align-items-center w-100">
                 <div class="col-lg-2 col-md-2 d-flex justify-content-center">
                     <a href="index.html">
@@ -22,13 +22,15 @@
                 <div class="col-lg-4 col-md-4 d-flex justify-content-center"  id="delete-button-container">
                 </div>
             </div>
-        </div>
+        </header>
 
-        <div class="container mt-3 custom-border"></div>
+        <main>
+        <section class="container mt-3 custom-border"></section>
         
         <!--Polia na vyplnenie informácií o produkte pri jeho vytváraní-->
         <!--teda polia ako Názov produktu, id, popis, informácie o výrobcovi, bližšie údaje o výrobku, fotky, hlavné kategórie, podkategórie a cena-->
-        <div class="container mt-5 custom-bg">
+        <section class="container mt-5 custom-bg">
+            <form>
             <div class="row">
                 <div class="col-12 col-md-4">
                     <label for="name" class="form-label">Meno:</label>
@@ -84,18 +86,18 @@
             </div>
             <!-- Fotky pre produkt pričom má možnosť odtránenia pomocou X-->
             <div class="row-50 mt-1" id="image-container">
-                <div class="image-wrapper">
+                <article class="image-wrapper">
                     <img src="Logo_obchodu.png" alt="Logo stránky" class="logo img-fluid rounded-circle" style="max-height: 100px;">
                     <span class="delete-icon">✖</span>
-                </div>
-                <div class="image-wrapper">
+                </article>
+                <article class="image-wrapper">
                     <img src="Logo_obchodu.png" alt="Logo stránky" class="logo img-fluid rounded-circle" style="max-height: 100px;">
                     <span class="delete-icon">✖</span>
-                </div>
-                <div class="image-wrapper">
+                </article>
+                <article class="image-wrapper">
                     <img src="Logo_obchodu.png" alt="Logo stránky" class="logo img-fluid rounded-circle" style="max-height: 100px;">
                     <span class="delete-icon">✖</span>
-                </div>
+                </article>
             </div>
             <!--Výber kategórii a podkategórii-->
             <div class="row mt-4">
@@ -224,9 +226,10 @@
             </div>
 
             <div class="row"></div>
-        </div>
+            </form>
+        </section>
         <!--Tlačitka pre vytvorenie produktu a návrat na správu produktov-->
-        <div class="container mt-3 mb-3">
+        <section class="container mt-3 mb-3">
             <div class="row w-100">
                 <div class="col-12 col-md-4 align-items-center justify-content-center">
                     <a href="sprava_produktov_A.html">
@@ -240,12 +243,12 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container">
             <div class="row"></div>
-        </div>
-    
+        </section>
+    </main>
     </div>
 
 

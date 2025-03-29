@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detail produktu</title>
+  <title>Detail produktu - Športový e-shop</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="styles.css" rel="stylesheet">
   <style>
@@ -28,30 +28,27 @@
 </head>
 <body class="with-background">
 <div class="container custom-body-bg">
-  <!-- Hlavné menu a kategórie zostávajú nezmenené -->
-  <div class="container mt-3 d-flex justify-content-center">
-    <div class="row align-items-center w-100">
+  <header class="mt-3">
+    <div class="row align-items-center">
       <div class="col-lg-2 col-md-2 d-flex justify-content-center">
-        <a href="index.html">
-          <img src="Logo_obchodu.png" alt="Logo stránky" class="logo img-fluid rounded-circle" style="max-height: 100px;">
+        <a href="index.html" aria-label="Domov">
+          <img src="Logo_obchodu.png" alt="Logo športového e-shopu" class="logo img-fluid rounded-circle" style="max-height: 100px;">
         </a>
       </div>
       <div class="col-lg-8 col-md-8 d-flex justify-content-center">
-        <input type="text" class="form-control form-control-sm text-center me-2" placeholder="Zadajte názov produktu ... ">
-        <button class="btn btn-dark btn-sm me-2">Hľadať</button>
+        <form class="d-flex w-100 justify-content-center" role="search">
+          <input type="search" class="form-control form-control-sm text-center me-2" placeholder="Zadajte názov produktu..." aria-label="Vyhľadávanie">
+          <button class="btn btn-dark btn-sm me-2" type="submit">Hľadať</button>
+        </form>
       </div>
       <div class="col-lg-2 col-md-2 d-flex justify-content-center">
-        <a href="prihlasenie.html">
-          <button class="btn btn-dark btn-sm me-2">Prihlásenie</button>
-        </a>
-        <a href="kosik.html">
-          <button class="btn btn-dark btn-sm">Košík</button>
-        </a>
+        <a href="prihlasenie.html"><button class="btn btn-dark btn-sm me-2">Prihlásenie</button></a>
+        <a href="kosik.html"><button class="btn btn-dark btn-sm">Košík</button></a>
       </div>
     </div>
-  </div>
+  </header>
 
-  <div class="container custom-bg mb-5">
+  <nav class="container custom-bg mb-5">
     <div class="row">
       <div class="col-2"></div>
       <div class="col-8 d-none d-md-flex justify-content-center">
@@ -61,7 +58,7 @@
         <button class="btn v_btn btn-dark btn-lg me-4 w-75" onclick="openCategory('sporty')">Športy</button>
       </div>
       <div class="col-8 d-md-none w-100">
-        <select class="form-select form-select-lg" onchange="openCategory(this.value)">
+        <select class="form-select form-select-lg" onchange="openCategory(this.value)" aria-label="Vyberte kategóriu">
           <option value="" selected disabled>Vyberte kategóriu</option>
           <option value="muzi">Muži</option>
           <option value="zeny">Ženy</option>
@@ -71,7 +68,7 @@
       </div>
       <div class="col-2"></div>
     </div>
-  </div>
+  </nav>
 
   <div class="custom-border mt-3 mb-3"></div>
 
@@ -82,42 +79,36 @@
     </ol>
   </nav>
 
-  <!-- Upravená sekcia s obrázkami a detailami -->
-  <div class="container mt-5">
-    <div class="row">
-      <!-- Stĺpec s miniatúrami -->
-      <div class="col-md-1 d-flex flex-column align-items-center">
-        <img src="obrazky/tesniska1.jpg" alt="Teniska 1" class="thumbnail active" onclick="changeImage('obrazky/tesniska1.jpg', this)">
-        <img src="obrazky/batoh.jpg" alt="batoh" class="thumbnail" onclick="changeImage('obrazky/batoh.jpg', this)">
-        <img src="obrazky/tesniska1.jpg" alt="Teniska 3" class="thumbnail" onclick="changeImage('obrazky/tesniska1.jpg', this)">
-        <img src="obrazky/tesniska1.jpg" alt="Teniska 4" class="thumbnail" onclick="changeImage('obrazky/tesniska1.jpg', this)">
-      </div>
+  <main class="container mt-5">
+    <article class="row">
+      <aside class="col-md-1 d-flex flex-column align-items-center">
+        <img src="obrazky/tesniska1.jpg" alt="Teniska pohľad 1" class="thumbnail active" onclick="changeImage('obrazky/tesniska1.jpg', this)">
+        <img src="obrazky/batoh.jpg" alt="Batoh" class="thumbnail" onclick="changeImage('obrazky/batoh.jpg', this)">
+        <img src="obrazky/tesniska1.jpg" alt="Teniska pohľad 2" class="thumbnail" onclick="changeImage('obrazky/tesniska1.jpg', this)">
+        <img src="obrazky/tesniska1.jpg" alt="Teniska pohľad 3" class="thumbnail" onclick="changeImage('obrazky/tesniska1.jpg', this)">
+      </aside>
 
-      <!-- Stĺpec s hlavným obrázkom -->
       <div class="col-md-5">
-        <img src="obrazky/tesniska1.jpg" alt="Hlavný obrázok tenisky" class="main-image img-fluid" id="mainImage">
+        <img src="obrazky/tesniska1.jpg" alt="Hlavný obrázok bežeckých tenisiek" class="main-image img-fluid" id="mainImage">
       </div>
 
-      <!-- Stĺpec s detailami produktu -->
-      <div class="col-md-6">
-        <h2 class="product-name">Bežecké tenisky</h2>
-        <h3>Ženy</h3>
+      <section class="col-md-6">
+        <h1 class="product-name">Bežecké tenisky</h1>
+        <p>Ženy</p>
         <p class="product-price text-success">59.99 €</p>
         <p class="product-description">
           Tento produkt je ideálny pre každého, kto hľadá kvalitu a výkon. Vhodný na...
         </p>
-        <!-- Farebné varianty produktu -->
         <div class="row">
-          <p class="col-1 mt-5 me-4">Farby:</p>
+          <label class="col-1 mt-5 me-4">Farby:</label>
           <div class="color-selection col-5 mt-5">
-            <span class="color-circle" style="background-color: red;"></span>
-            <span class="color-circle" style="background-color: blue;"></span>
-            <span class="color-circle" style="background-color: green;"></span>
-            <span class="color-circle" style="background-color: yellow;"></span>
+            <span class="color-circle" style="background-color: red;" aria-label="Červená"></span>
+            <span class="color-circle" style="background-color: blue;" aria-label="Modrá"></span>
+            <span class="color-circle" style="background-color: green;" aria-label="Zelená"></span>
+            <span class="color-circle" style="background-color: yellow;" aria-label="Žltá"></span>
           </div>
         </div>
-        <!-- Rôzne veľkosti produktu -->
-        <p class="mt-3">Veľkosť</p>
+        <label class="mt-3">Veľkosť:</label>
         <div class="row">
           <div class="col-1"></div>
           <div class="size-option">40</div>
@@ -132,42 +123,31 @@
           <div class="size-option">42</div>
           <div class="size-option">43</div>
         </div>
-
         <div class="d-flex align-items-center mt-3">
           <label for="quantity" class="me-3">Množstvo:</label>
-          <input type="number" id="quantity" class="form-control w-25" min="1" value="1">
+          <input type="number" id="quantity" class="form-control w-25" min="1" value="1" aria-label="Množstvo">
           <button class="btn btn-outline-success ms-3">Pridať do košíka</button>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+    </article>
 
-  <!--Popis produktu, Informácie o výrobcovi, Údaje o výrobku-->
-  <div class="custom-border mt-3 mb-3"></div>
-  <div class="container mt-3">
-    <section>
-      <h2 class="mb-5">Popis produktu</h2>
+    <div class="custom-border mt-3 mb-3"></div>
+
+    <section class="mt-3">
+      <h2>Popis produktu</h2>
       <p>
         Bežecké tenisky sú ideálnym partnerom pre každú ženu, ktorá si potrpí na pohodlie,
-        podporu a výkon pri behu. Tieto tenisky sú navrhnuté s dôrazom na komfort a flexibilitu,
-        čo z nich robí skvelú voľbu pre pravidelný tréning alebo rekreačný beh. Vyznačujú sa moderným dizajnom,
-        ktorý zaručuje nielen funkčnosť, ale aj štýl. Vďaka kvalitným materiálom a technológii tlmenia nárazov
-        poskytujú maximálnu stabilitu a ochranu pre vaše nohy pri každom kroku. Bez ohľadu na to, či beháte po
-        cestách alebo na tréningových dráhach, tieto tenisky vás podporia na každom kilometri.
+        podporu a výkon pri behu. Tieto tenisky sú navrhnuté s dôrazom na komfort a flexibilitu...
       </p>
     </section>
     <section>
-      <h2 class="mb-5">Informácie o výrobcovi</h2>
+      <h2>Informácie o výrobcovi</h2>
       <p>
-        Značka sa špecializuje na výrobu kvalitného športového vybavenia, ktoré je navrhnuté s ohľadom na výkon a
-        pohodlie športovcov všetkých úrovní. S viac ako 20-ročnými skúsenosťami v priemysle ponúkame produkty, ktoré
-        kombinujú moderné technológie s dizajnom orientovaným na pohodlie a výkon. Naša filozofia je jednoduchá - ponúknuť
-        produkty, ktoré spĺňajú nároky aj tých najnáročnejších zákazníkov.
+        Značka sa špecializuje na výrobu kvalitného športového vybavenia, ktoré je navrhnuté s ohľadom na výkon...
       </p>
     </section>
     <section>
-      <h2 class="mb-5">Údaje o výrobku</h2>
-      <p>
+      <h2>Údaje o výrobku</h2>
       <ul>
         <li><strong>Typ výrobku:</strong> Bežecké tenisky pre ženy</li>
         <li><strong>Materiál:</strong> Syntetická tkanina, guma, EVA pena</li>
@@ -178,51 +158,48 @@
         <li><strong>Hmotnosť:</strong> 250 g (veľkosť 39)</li>
         <li><strong>Záruka:</strong> 2 roky</li>
       </ul>
-      </p>
     </section>
-  </div>
+  </main>
 
-  <!--Podpora,obchodné podmienky a iné informácie ohľadom nakupovania-->
-  <div class="container d-flex mt-5 custom-border">
+  <footer class="container d-flex mt-5 custom-border">
     <div class="row w-100 text-center">
-      <div class="col-12 col-md-3 col-sm-6 mt-2">
+      <section class="col-12 col-md-3 col-sm-6 mt-2">
         <h4>Zákaznícka podpora</h4>
         <ul class="no-bullets">
           <li>Telefónne číslo</li>
           <li>Pracovné podmienky</li>
           <li>Email</li>
         </ul>
-      </div>
-      <div class="col-12 col-md-3 col-sm-6 mt-2">
+      </section>
+      <section class="col-12 col-md-3 col-sm-6 mt-2">
         <h4>Obchodné podmienky</h4>
         <ul class="no-bullets">
           <li>Všeobecné obchodné podmienky</li>
           <li>Ochrana osobných údajov</li>
           <li>Cookies</li>
         </ul>
-      </div>
-      <div class="col-12 col-md-3 col-sm-6 mt-2">
+      </section>
+      <section class="col-12 col-md-3 col-sm-6 mt-2">
         <h4>Ako nakupovať</h4>
         <ul class="no-bullets">
           <li>Spôsob platby</li>
           <li>Spôsob dopravy</li>
           <li>Výmena a vrátenie</li>
         </ul>
-      </div>
-      <div class="col-12 col-md-3 col-sm-6 mt-2">
+      </section>
+      <section class="col-12 col-md-3 col-sm-6 mt-2">
         <h4>Služby</h4>
         <ul class="no-bullets">
           <li>Darčeková karta</li>
           <li>Zákaznícka karta</li>
           <li>Servis</li>
         </ul>
-      </div>
+      </section>
     </div>
-  </div>
+  </footer>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="js/detail_produktu.js" defer></script>
-
 </body>
 </html>

@@ -10,7 +10,7 @@
 <body>
     <!--Hlavička s logom-->
     <div class="container custom-body-bg">
-        <div class="container  mt-3 d-flex justify-content-center">
+        <header class="container  mt-3 d-flex justify-content-center">
             <div class="row align-items-center w-100">
                 <div class="col-lg-2 col-md-2 d-flex justify-content-center">
                     <a href="index.html">
@@ -22,11 +22,12 @@
                 <div class="col-lg-2 col-md-2 d-flex justify-content-center">
                 </div>
             </div>
-        </div>
+        </header>
 
-        <div class="container mt-3 custom-border"></div>
+        <main>
+        <section class="container mt-3 custom-border"></section>
         <!--Tlačítka pre uloženie zmien alebo vrátenie do správy objednávok-->
-        <div class="container mt-3">
+        <section class="container mt-3">
             <div class="row">
                 <div class="col-12 col-md-4">
                     <a href="sprava_objednavok_zakaznikov_A.html">
@@ -40,13 +41,13 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!--Informácie o objednávke-->
-        <div class="container mt-2">
+        <section class="container mt-2">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <div class="container custom-bg">
+                    <form class="container custom-bg">
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <label for="name" class="form-label">Meno:</label>
@@ -89,12 +90,12 @@
                                 <label class="form-label">19,99</label>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <!--Produkty v danej objednávke a ich počet, ktorý bol objednaný-->
                 <div class="col-12 col-md-6 custom-bg">
-                    <div class="container">
-                        <div class="row w-100 d-flex justify-content-center align-items-center mt-3 border-itemy-kosik">
+                    <section class="container">
+                        <article class="row w-100 d-flex justify-content-center align-items-center mt-3 border-itemy-kosik">
 
                             <div class="col-4 d-flex justify-content-center ">
                                 <img src="Logo_obchodu.png" alt="Logo of the Store" class="img-fluid mb-1" style="max-height: 50px;;">
@@ -107,24 +108,9 @@
                                 Nejaký popis
                             </div>
             
-                        </div>
+                        </article>
 
-                        <div class="row w-100 d-flex justify-content-center align-items-center mt-3 border-itemy-kosik">
-
-                            <div class="col-4 d-flex justify-content-center ">
-                                <img src="Logo_obchodu.png" alt="Logo of the Store" class="img-fluid mb-1" style="max-height: 50px;;">
-                            </div>
-            
-                            <div class="col-4  d-flex justify-content-center align-items-center">
-                                <label class="form-label">1</label>
-                            </div>
-                            <div class="col-4  text-center">    
-                                Nejaký popis
-                            </div>
-            
-                        </div>
-
-                        <div class="row w-100 d-flex justify-content-center align-items-center mt-3 border-itemy-kosik">
+                        <article class="row w-100 d-flex justify-content-center align-items-center mt-3 border-itemy-kosik">
 
                             <div class="col-4 d-flex justify-content-center ">
                                 <img src="Logo_obchodu.png" alt="Logo of the Store" class="img-fluid mb-1" style="max-height: 50px;;">
@@ -137,9 +123,9 @@
                                 Nejaký popis
                             </div>
             
-                        </div>
+                        </article>
 
-                        <div class="row w-100 d-flex justify-content-center align-items-center mt-3 border-itemy-kosik">
+                        <article class="row w-100 d-flex justify-content-center align-items-center mt-3 border-itemy-kosik">
 
                             <div class="col-4 d-flex justify-content-center ">
                                 <img src="Logo_obchodu.png" alt="Logo of the Store" class="img-fluid mb-1" style="max-height: 50px;;">
@@ -152,16 +138,33 @@
                                 Nejaký popis
                             </div>
             
-                        </div>
-                    </div>
+                        </article>
+
+                        <article class="row w-100 d-flex justify-content-center align-items-center mt-3 border-itemy-kosik">
+
+                            <div class="col-4 d-flex justify-content-center ">
+                                <img src="Logo_obchodu.png" alt="Logo of the Store" class="img-fluid mb-1" style="max-height: 50px;;">
+                            </div>
+            
+                            <div class="col-4  d-flex justify-content-center align-items-center">
+                                <label class="form-label">1</label>
+                            </div>
+                            <div class="col-4  text-center">    
+                                Nejaký popis
+                            </div>
+            
+                        </article>
+                    </section>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- Tlačítka pre zablokovanie používateľa a strornovanie objednávky-->
-        <div class="container mt-5">
+        <section class="container mt-5">
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <button class="btn btn-danger  w-100 ">Zablokovať používateľa</button>
+                    <a href="sprava_objednavok_zakaznikov_A.html">
+                        <button class="btn btn-danger  w-100 ">Zablokovať používateľa</button>
+                    </a>
                 </div>
                 <div class="col-12 col-md-4"></div>
                 <div class="col-12 col-md-4">
@@ -170,11 +173,12 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="container mt-5">
+        <section class="container mt-5">
             <div class="row"></div>
-        </div>
+        </section>
+        </main>
     </div>
 
 

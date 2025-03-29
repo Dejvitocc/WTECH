@@ -10,7 +10,7 @@
 <body class="with-background">
 <div class="container custom-body-bg">
   <!--Hlavné menu-->
-  <div class="container  mt-3 d-flex justify-content-center">
+  <header class="container  mt-3 d-flex justify-content-center">
     <div class="row align-items-center w-100">
       <div class="col-lg-2 col-md-2 d-flex justify-content-center">
         <a href="index.html">
@@ -30,10 +30,10 @@
         </a>
       </div>
     </div>
-  </div>
+  </header>
 
   <!--Kategórie výberu-->
-  <div class="container  custom-bg mb-5">
+  <nav class="container  custom-bg mb-5">
     <div class="row">
       <div class="col-2"></div>
 
@@ -56,7 +56,7 @@
       </div>
       <div class="col-2"></div>
     </div>
-  </div>
+  </nav>
 
   <!--Zobrazenie v akej kategórii sa aktuálne nachádzame-->
   <nav aria-label="breadcrumb">
@@ -66,14 +66,15 @@
     </ol>
   </nav>
 
-  <div class="container mt-5">
+  <main>
+  <section class="container mt-5">
     <div class="row text-center d-flex justify-content-center" id="subcategory-container">
       <!-- Podkategórie sa sem vložia dynamicky -->
     </div>
-  </div>
+  </section>
   <div class="custom-border mt-3"></div>
 
-  <div class="container mt-3">
+  <section class="container mt-3">
     <div class="row">
       <!-- Veľkosť Filter -->
       <div class="col">
@@ -174,13 +175,13 @@
           </ul>
         </div>
       </div>    </div>
-  </div>
+  </section>
 
   <!--Jednotlivé karty pre produkty v danej kategórií-->
-  <div class="container mt-5">
+  <section class="container mt-5">
     <div class="row">
 
-      <div class="col-md-3">
+      <article class="col-md-3">
         <a href="detail_produktu.html" class="text-decoration-none card-link">
           <div class="card">
             <img src="obrazky/baseball_rukavica.jpg" class="card-img-top" alt="baseball rukavica">
@@ -197,9 +198,9 @@
             </div>
           </div>
         </a>
-      </div>
+      </article>
 
-      <div class="col-md-3">
+      <article class="col-md-3">
         <a href="detail_produktu.html" class="text-decoration-none card-link">
           <div class="card">
             <img src="obrazky/basketbalova_lopta.jpg" class="card-img-top" alt="basketbalova lopta">
@@ -216,9 +217,9 @@
             </div>
           </div>
         </a>
-      </div>
+      </article>
 
-      <div class="col-md-3">
+      <article class="col-md-3">
         <a href="detail_produktu.html" class="text-decoration-none card-link">
           <div class="card">
             <img src="obrazky/golfova_lopta.jpg" class="card-img-top" alt="golfova lopta">
@@ -235,9 +236,9 @@
             </div>
           </div>
         </a>
-      </div>
+      </article>
 
-      <div class="col-md-3">
+      <article class="col-md-3">
         <a href="detail_produktu.html" class="text-decoration-none card-link">
           <div class="card">
             <img src="obrazky/jednorucky.jpg" class="card-img-top" alt="jednorucky">
@@ -254,12 +255,12 @@
             </div>
           </div>
         </a>
-      </div>
+      </article>
     </div>
 
     <div class="row mt-5">
 
-      <div class="col-md-3">
+      <article class="col-md-3">
         <a href="detail_produktu.html" class="text-decoration-none card-link">
           <div class="card">
             <img src="obrazky/korcule.jpg" class="card-img-top" alt="korcule">
@@ -276,9 +277,9 @@
             </div>
           </div>
         </a>
-      </div>
+      </article>
 
-      <div class="col-md-3">
+      <article class="col-md-3">
         <a href="detail_produktu.html" class="text-decoration-none card-link">
           <div class="card">
             <img src="obrazky/mikina.png" class="card-img-top" alt="mikina">
@@ -295,9 +296,9 @@
             </div>
           </div>
         </a>
-      </div>
+      </article>
 
-      <div class="col-md-3">
+      <article class="col-md-3">
         <a href="detail_produktu.html" class="text-decoration-none card-link">
           <div class="card">
             <img src="obrazky/teniska2.jpg" class="card-img-top" alt="outdoor teniska">
@@ -314,9 +315,9 @@
             </div>
           </div>
         </a>
-      </div>
+      </article>
 
-      <div class="col-md-3">
+      <article class="col-md-3">
         <a href="detail_produktu.html" class="text-decoration-none card-link">
           <div class="card">
             <img src="obrazky/tenisova_lopta.jpg" class="card-img-top" alt="tenisova lopta">
@@ -333,9 +334,9 @@
             </div>
           </div>
         </a>
-      </div>
+      </article>
     </div>
-  </div>
+  </section>
 
   <!--Prepínanie medzi viacerými stránkami produktov-->
   <nav aria-label="Page navigation" class="mt-5">
@@ -366,9 +367,10 @@
       </li>
     </ul>
   </nav>
+  </main>
 
   <!--Podpora,obchodné podmienky a iné informácie ohľadom nakupovania-->
-  <div class="container d-flex mt-5 custom-border">
+  <footer class="container d-flex mt-5 custom-border">
     <div class="row w-100 text-center">
       <div class=" col-12  col-md-3 col-sm-6 mt-2">
         <h4>Zákaznícka podpora</h4>
@@ -403,7 +405,7 @@
         </ul>
       </div>
     </div>
-  </div>
+  </footer>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
